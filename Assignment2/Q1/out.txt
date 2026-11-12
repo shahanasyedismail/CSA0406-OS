@@ -1,0 +1,27 @@
+parent pid = 5583
+--- child 5585 (busy loop (running/ready))
+State:	R (running)
+PPid:	5583
+VmRSS:	     368 kB
+voluntary_ctxt_switches:	0
+nonvoluntary_ctxt_switches:	9
+--- child 5586 (sleeping (waiting))
+State:	S (sleeping)
+PPid:	5583
+VmRSS:	     428 kB
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	0
+--- child 5587 (sleeping (waiting))
+State:	S (sleeping)
+PPid:	5583
+VmRSS:	     428 kB
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	0
+--- child 5588 (exits at once (zombie))
+State:	Z (zombie)
+PPid:	5583
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	0
+
+Now run ps in a second terminal. Waiting 20 s...
+all children reaped
